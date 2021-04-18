@@ -1,14 +1,17 @@
 {
   "name": "telecall-demo",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd server && ts-node-dev src",
     "rollup": "cd www && rollup -c",
     "webpack": "cd www && webpack",
+    "bundle": "npm run rollup && npm run webpack",
+    "dev": "cd server && ts-node-dev src",
+    "tsc": "cd server && rm -rf dist && tsc",
+    "start": "cd server && node dist",
     "prettier": "prettier . --write --ignore-path .gitignore",
-    "build": "npm run rollup && npm run webpack & npm run prettier"
+    "build": "npm run rollup && npm run webpack & npm run tsc && npm run prettier"
   },
   "author": "Beep LIN",
   "license": "MIT",
@@ -19,7 +22,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "telecall": "^0.1.0"
+    "telecall": "^0.5.0"
   },
   "devDependencies": {
     "@rollup/plugin-html": "^0.2.3",
