@@ -1,7 +1,7 @@
 import type { Context } from '../index'
 
 export default function test(
-  { req, res }: Context,
+  { req }: Context,
   a: { d: number },
   b?: string,
   c?: string,

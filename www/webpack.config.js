@@ -1,14 +1,19 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const telecall = require('telecall/lib/webpack-rule')
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 
 module.exports = {
+  mode: 'production',
   entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'webpack/index.js',
   },
-  mode: 'production',
+  resolve: {
+    extensions: ['.tsx', '.ts', '.jsx', '.js'],
+    plugins: [new TsconfigPathsPlugin()],
+  },
   module: {
     rules: [
       {
@@ -23,9 +28,6 @@ module.exports = {
       },
       telecall(),
     ],
-  },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.jsx', '.js'],
   },
   plugins: [new HtmlWebpackPlugin({ filename: 'webpack/index.html' })],
 }

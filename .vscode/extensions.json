@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "coenraads.bracket-pair-colorizer-2",
+    "mskelton.one-dark-theme",
+    "pkief.material-icon-theme",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "visualstudioexptteam.vscodeintellicode"
+  ]
+}

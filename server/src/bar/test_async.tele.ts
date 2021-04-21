@@ -1,7 +1,7 @@
 import type { Context } from '../index'
 
-export default async function test_async(
-  { req, res }: Context,
+export default async function testAsync(
+  { req }: Context,
   a: { d: number },
   b?: string,
   c?: string,

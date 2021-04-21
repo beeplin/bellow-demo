@@ -1,0 +1,35 @@
+{
+  // appearance
+  "bracket-pair-colorizer-2.colors": [
+    // for one dark theme
+    "hsl(187, 47%, 55%)", // <-cyan
+    "hsl( 29, 54%, 61%)", // <-orange 1
+    "hsl( 95, 38%, 62%)", // <-green
+    "hsl(220, 14%, 71%)", // <-default text
+    "hsl(355, 65%, 65%)", // <-red 1
+    "hsl(207, 82%, 66%)", // <-blue
+    "hsl( 39, 67%, 69%)", // <-orange 2
+    "hsl(286, 60%, 67%)", // <-purple
+    "hsl(  5, 48%, 51%)" // <-red 2
+  ],
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.minimap.maxColumn": 88,
+  "editor.mouseWheelZoom": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "boundary",
+  "workbench.colorTheme": "One Dark",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // editing
+  "editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true, // only supports html, not jsx/tsx
+  "editor.snippetSuggestions": "top",
+  "editor.suggestSelection": "first",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+}
